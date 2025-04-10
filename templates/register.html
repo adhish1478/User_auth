@@ -3,7 +3,7 @@
 
 {% block content %}
 <h2>Register</h2>
-<form method="POST" action="register">
+<form method="POST">
     {% csrf_token %}
     <label>Username:</label><br>
     <input type="text" name="username" required><br><br>
