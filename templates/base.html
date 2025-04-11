@@ -4,6 +4,13 @@
     <title>{% block title %}My App{% endblock %}</title>
 </head>
 <body>
+    <div>
+        {% if messages %}
+            {% for message in messages %}
+                <h3 style="color:green">{{ message }}</h3>
+            {% endfor %}
+        {% endif %}
+    </div>
     {% block content %}
     {% endblock %}
 </body>
